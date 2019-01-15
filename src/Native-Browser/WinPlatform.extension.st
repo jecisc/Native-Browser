@@ -1,7 +1,7 @@
-Extension { #name : #Win32Platform }
+Extension { #name : #WinPlatform }
 
 { #category : #'*Native-Browser' }
-Win32Platform >> privShellExecute: lpOperation file: lpFile parameters: lpParameters directory: lpDirectory show: nShowCmd [
+WinPlatform >> privShellExecute: lpOperation file: lpFile parameters: lpParameters directory: lpDirectory show: nShowCmd [
 	^ self ffiCall: #( 
 			FFIConstantHandle ShellExecuteA(
      				0,
@@ -13,6 +13,6 @@ Win32Platform >> privShellExecute: lpOperation file: lpFile parameters: lpParame
 ]
 
 { #category : #'*Native-Browser' }
-Win32Platform >> privateOpenNativeBrowserOn: pathString [
+WinPlatform >> privateOpenNativeBrowserOn: pathString [
 	^ self privShellExecute: 'explore' file: pathString parameters: '' directory: '' show: 5 "SW_SHOW"
 ]
