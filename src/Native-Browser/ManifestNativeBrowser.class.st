@@ -1,5 +1,5 @@
 "
-Native-Browesr is a package adding to the system the possibility of opening a directory in the native browser of the OS. 
+Native-Browser is a package adding to the system the possibility of opening a directory in the native browser of the OS. 
 
 Currently working on:
 - OSX (32/64)
