@@ -4,7 +4,7 @@ Native-Browesr is a package adding to the system the possibility of opening a di
 Currently working on:
 - OSX (32/64)
 - Linux (32/64)
-- Windows (32)
+- Windows (32/64)
 
 You can use it like this:
 
